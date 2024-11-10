@@ -4,7 +4,7 @@
  *
  * @package CityLogic
  */
-define( 'CITYLOGIC_THEME_VERSION' , '1.1.39' );
+define( 'CITYLOGIC_THEME_VERSION' , '1.1.40' );
 
 global $solidify_breakpoint, $mobile_menu_breakpoint, $demo_slides;
 
@@ -588,16 +588,18 @@ add_action( 'woocommerce_before_shop_loop_item_title', function() {
 }, 11 );
 
 // Set the number or products per page
-function citylogic_loop_shop_per_page( $cols ) {
-	// $cols contains the current number of products per page based on the value stored on Options -> Reading
-	// Return the number of products you wanna show per page.
-	$cols = get_theme_mod( 'citylogic-woocommerce-products-per-page' );
-	
-	return $cols;
+if ( ! function_exists( 'citylogic_loop_shop_per_page' ) ) {
+	function citylogic_loop_shop_per_page( $cols ) {
+		// $cols contains the current number of products per page based on the value stored on Options -> Reading
+		// Return the number of products you wanna show per page.
+		$cols = get_theme_mod( 'citylogic-woocommerce-products-per-page' );
+		
+		return $cols;
+	}
 }
 add_filter( 'loop_shop_per_page', 'citylogic_loop_shop_per_page', 20 );
 
-if ( !function_exists( 'citylogic_woocommerce_product_thumbnails_columns' ) ) {
+if ( ! function_exists( 'citylogic_woocommerce_product_thumbnails_columns' ) ) {
 	function citylogic_woocommerce_product_thumbnails_columns() {
 		return 3;
 	}
@@ -608,22 +610,26 @@ add_filter ( 'woocommerce_product_thumbnails_columns', 'citylogic_woocommerce_pr
  * Replace Read more buttons for out of stock items
  */
 // Display an Out of Stock label on out of stock products
-add_action( 'woocommerce_after_shop_loop_item_title', 'citylogic_out_of_stock_notice', 10 );
-function citylogic_out_of_stock_notice() {
-    global $product;
-    if ( !$product->is_in_stock() ) {
-		echo '<p class="stock out-of-stock">';
-		echo __( 'Out of Stock', 'citylogic' );
-		echo '</p>';
-    }
+if ( ! function_exists( 'citylogic_out_of_stock_notice' ) ) {
+	function citylogic_out_of_stock_notice() {
+	    global $product;
+	    if ( !$product->is_in_stock() ) {
+			echo '<p class="stock out-of-stock">';
+			echo __( 'Out of Stock', 'citylogic' );
+			echo '</p>';
+	    }
+	}
 }
+add_action( 'woocommerce_after_shop_loop_item_title', 'citylogic_out_of_stock_notice', 10 );
 
 // Set the blog excerpt length
-function citylogic_excerpt_length( $length ) {
-	if ( is_admin() || ( !is_home() && !is_category() && !is_tag() && !is_search() ) ) {
-		return $length;
-	} else {
-		return intval( get_theme_mod( 'citylogic-blog-excerpt-length', customizer_library_get_default( 'citylogic-blog-excerpt-length' ) ) );
+if ( ! function_exists( 'citylogic_excerpt_length' ) ) {
+	function citylogic_excerpt_length( $length ) {
+		if ( is_admin() || ( !is_home() && !is_category() && !is_tag() && !is_search() ) ) {
+			return $length;
+		} else {
+			return intval( get_theme_mod( 'citylogic-blog-excerpt-length', customizer_library_get_default( 'citylogic-blog-excerpt-length' ) ) );
+		}
 	}
 }
 add_filter( 'excerpt_length', 'citylogic_excerpt_length', 999 );
@@ -634,15 +640,8 @@ if ( ! function_exists( 'citylogic_excerpt_more' ) ) {
 		// If in the admin then display the default read more
 		if ( is_admin() ) {
 			return $more;
-			
-		// If not the blog or the category of the tag page or the search page then display the theme's read more link
-		//} else if ( ( !is_home() && !is_category() && !is_tag() && !is_search() ) ) {
-		//	return ' <a class="read-more" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . esc_html( pll__( get_theme_mod( 'citylogic-blog-read-more-text', customizer_library_get_default( 'citylogic-blog-read-more-text' ) ) ) ) . '</a>';
-		
-		// Otherwise display the theme's read more link
 		} else {
 			return ' <a class="read-more" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . wp_kses_post( pll__( get_theme_mod( 'citylogic-blog-read-more-text', customizer_library_get_default( 'citylogic-blog-read-more-text' ) ) ) ) . '</a>';
-		
 		}
 	}
 }
