@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: citylogic\n"
-"POT-Creation-Date: 2024-09-30 10:19+0200\n"
+"POT-Creation-Date: 2024-11-22 10:41+0200\n"
 "PO-Revision-Date: 2017-08-18 23:55+0200\n"
 "Last-Translator: \n"
 "Language-Team: Out the Box\n"
@@ -221,7 +221,7 @@ msgstr ""
 msgid "Form Input Text Color"
 msgstr ""
 
-#: customizer/customizer-options.php:247 functions.php:270
+#: customizer/customizer-options.php:247 functions.php:271
 msgid "Footer"
 msgstr ""
 
@@ -676,15 +676,15 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:260
+#: functions.php:261
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:278
+#: functions.php:279
 msgid "Footer Bottom Bar - Right"
 msgstr ""
 
-#: functions.php:616
+#: functions.php:619
 msgid "Out of Stock"
 msgstr ""
 
