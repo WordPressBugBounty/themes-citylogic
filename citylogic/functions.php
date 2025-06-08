@@ -4,7 +4,7 @@
  *
  * @package CityLogic
  */
-define( 'CITYLOGIC_THEME_VERSION' , '1.1.44' );
+define( 'CITYLOGIC_THEME_VERSION' , '1.1.45' );
 
 global $solidify_breakpoint, $mobile_menu_breakpoint, $demo_slides;
 
