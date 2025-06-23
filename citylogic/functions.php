@@ -4,7 +4,7 @@
  *
  * @package CityLogic
  */
-define( 'CITYLOGIC_THEME_VERSION' , '1.1.45' );
+define( 'CITYLOGIC_THEME_VERSION' , '1.1.46' );
 
 global $solidify_breakpoint, $mobile_menu_breakpoint, $demo_slides;
 
@@ -234,7 +234,7 @@ function citylogic_admin_notice() {
 	
 	if ( !empty( $message['text'] ) && !get_user_meta( $user_id, 'citylogic_admin_notice_' .$message['id']. '_dismissed' ) ) {
 		$class = 'notice otb-notice red notice-success is-dismissible';
-		printf( '<div class="%1$s"><img src="https://www.outtheboxthemes.com/wp-content/uploads/2020/12/logo-red.png" class="logo" /><h3>%2$s</h3><p>%3$s</p><p style="margin:0;"><a class="button button-primary" href="%4$s" target="_blank">Read More</a> <a class="button button-dismiss" href="?panoramic-admin-notice-dismissed&panoramic-admin-notice-id=%5$s">Dismiss</a></p></div>', esc_attr( $class ), $message['heading'], $message['text'], $message['link'], $message['id'] );
+		printf( '<div class="%1$s"><img src="https://www.outtheboxthemes.com/wp-content/uploads/2020/12/logo-red.png" class="logo" /><h3>%2$s</h3><p>%3$s</p><p style="margin:0;"><a class="button button-primary" href="%4$s" target="_blank">Read More</a> <a class="button button-dismiss" href="?citylogic-admin-notice-dismissed&citylogic-admin-notice-id=%5$s">Dismiss</a></p></div>', esc_attr( $class ), $message['heading'], $message['text'], $message['link'], $message['id'] );
 	}
 }
 
@@ -317,6 +317,10 @@ function citylogic_theme_scripts() {
     	wp_enqueue_style( 'citylogic-woocommerce-custom', get_template_directory_uri().'/library/css/woocommerce-custom.css', array(), CITYLOGIC_THEME_VERSION );
 	}
 
+	if ( class_exists( 'Wp_Travel_Engine' ) ) {
+		wp_enqueue_style( 'citylogic-wp-travel-engine', get_template_directory_uri().'/library/css/wp-travel-engine.css', array(), CITYLOGIC_THEME_VERSION );
+	}
+	
 	wp_enqueue_script( 'citylogic-navigation', get_template_directory_uri() . '/library/js/navigation.js', array(), CITYLOGIC_THEME_VERSION, true );
 	wp_enqueue_script( 'caroufredsel', get_template_directory_uri() . '/library/js/jquery.carouFredSel-6.2.1-packed.js', array('jquery'), CITYLOGIC_THEME_VERSION, true );
 	wp_enqueue_script( 'citylogic-touchswipe', get_template_directory_uri() . '/library/js/jquery.touchSwipe.min.js', array('jquery'), CITYLOGIC_THEME_VERSION, true );

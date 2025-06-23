@@ -108,6 +108,9 @@ View the theme settings under "Appearance" -> Customize.
 
 == Changelog ==
 
+#### 1.1.46
+* New: Added styling for the WP Travel Engine plugin
+
 #### 1.1.45
 * PREMIUM: Optional Quick View button now available for WooCommerce product listings
 * Fix: Sale badge no longer misaligned on shop page
