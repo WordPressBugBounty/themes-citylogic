@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: citylogic\n"
-"POT-Creation-Date: 2025-06-23 17:38+0200\n"
+"POT-Creation-Date: 2025-07-01 10:50+0200\n"
 "PO-Revision-Date: 2017-08-18 23:55+0200\n"
 "Last-Translator: \n"
 "Language-Team: Out the Box\n"
@@ -221,7 +221,7 @@ msgstr ""
 msgid "Form Input Text Color"
 msgstr ""
 
-#: customizer/customizer-options.php:247 functions.php:271
+#: customizer/customizer-options.php:247 functions.php:274
 msgid "Footer"
 msgstr ""
 
@@ -261,7 +261,7 @@ msgstr ""
 msgid "CityLogic adds custom styling to support external plugins:"
 msgstr ""
 
-#: customizer/customizer-options.php:350 functions.php:851
+#: customizer/customizer-options.php:350 functions.php:854
 msgid "BookingPress"
 msgstr ""
 
@@ -484,7 +484,7 @@ msgstr ""
 msgid "Header image has a minimum width"
 msgstr ""
 
-#: customizer/customizer-options.php:764 functions.php:856
+#: customizer/customizer-options.php:764 functions.php:859
 msgid "WooCommerce"
 msgstr ""
 
@@ -676,47 +676,47 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:261
+#: functions.php:264
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:279
+#: functions.php:282
 msgid "Footer Bottom Bar - Right"
 msgstr ""
 
-#: functions.php:623
+#: functions.php:626
 msgid "Out of Stock"
 msgstr ""
 
-#: functions.php:806
+#: functions.php:809
 msgid "Elementor"
 msgstr ""
 
-#: functions.php:811
+#: functions.php:814
 msgid "You can quote me on that"
 msgstr ""
 
-#: functions.php:816
+#: functions.php:819
 msgid "SiteOrigin Widgets Bundle"
 msgstr ""
 
-#: functions.php:821
+#: functions.php:824
 msgid "Beam me up Scotty"
 msgstr ""
 
-#: functions.php:826 functions.php:841
+#: functions.php:829 functions.php:844
 msgid "Recent Posts Widget Extended"
 msgstr ""
 
-#: functions.php:831
+#: functions.php:834
 msgid "WPForms"
 msgstr ""
 
-#: functions.php:836
+#: functions.php:839
 msgid "Photo Gallery by Supsystic"
 msgstr ""
 
-#: functions.php:846
+#: functions.php:849
 msgid "MailChimp for WordPress"
 msgstr ""
 

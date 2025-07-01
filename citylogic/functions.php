@@ -4,7 +4,7 @@
  *
  * @package CityLogic
  */
-define( 'CITYLOGIC_THEME_VERSION' , '1.1.46' );
+define( 'CITYLOGIC_THEME_VERSION' , '1.1.47' );
 
 global $solidify_breakpoint, $mobile_menu_breakpoint, $demo_slides;
 
@@ -138,6 +138,9 @@ function citylogic_theme_setup() {
 }
 endif; // citylogic_theme_setup
 add_action( 'after_setup_theme', 'citylogic_theme_setup' );
+
+// Unhide modern markup setting in admin
+add_filter( 'wpforms_admin_settings_modern_markup_register_field_is_hidden', '__return_false' );
 
 if ( ! function_exists( 'citylogic_fonts_url' ) ) :
 	/**
