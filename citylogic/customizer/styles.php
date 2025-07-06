@@ -683,6 +683,7 @@ function citylogic_customizer_library_build_styles() {
     			.citylogic-page-builders-use-theme-styles .elementor-widget-button .elementor-button,
 				.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
 				.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title a,
+    			.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-title,
 				html #jp-relatedposts h3.jp-relatedposts-headline,
 				html #infinite-handle span button,
 				html #infinite-handle span button:hover,
@@ -718,6 +719,7 @@ function citylogic_customizer_library_build_styles() {
 				.citylogic-page-builders-use-theme-styles .elementor-widget-heading .elementor-heading-title,
     			.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
 				.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title a,
+    			.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-title,
     			.widget-area .widget h2,
 				.site-footer-widgets .widgettitle'
     		),
@@ -754,7 +756,8 @@ function citylogic_customizer_library_build_styles() {
 	            .woocommerce .woocommerce-ordering select,
 				.woocommerce-page .woocommerce-ordering select,
 	            .citylogic-page-builders-use-theme-styles .elementor-widget-text-editor,
-				.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description'
+				.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
+	            .citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-description'
 			),
             'declarations' => array(
                 'font-family' => $fontstack
@@ -801,6 +804,7 @@ function citylogic_customizer_library_build_styles() {
 				.woocommerce-checkout #payment div.payment_box,
                 .citylogic-page-builders-use-theme-styles .elementor-widget-text-editor,
 				.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
+                .citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-description,
                 .wp-block-quote cite'
             ),
             'declarations' => array(

@@ -4,7 +4,7 @@ Theme URI: https://www.outtheboxthemes.com/wordpress-themes/citylogic/
 Author: Out the Box
 Author URI: https://www.outtheboxthemes.com/
 Description: Your Go-to Theme. CityLogic's modest but eye-catching design makes it a great choice for creating any website from travel to business to food, decor, lifestyle, sport and more. The ability to have a transparent header allows the use of bold homepage imagery by displaying either a static header image or slider - with the choice of using the built-in slider or any 3rd party slider plugin of your choice. CityLogic integrates seamlessly with a number of popular FREE plugins such as WooCommerce, WPForms and Recent Posts Widget Extended. It also works great with SiteOrigin's Page Builder plugin making it quick and easy to create professional looking pages without any coding knowledge. You're always one step ahead with CityLogic!
-Version: 1.1.47
+Version: 1.1.48
 Tested up to: 6.8
 Requires at least: 4.7
 Requires PHP: 5.3
@@ -5308,6 +5308,7 @@ a.button,
 .citylogic-page-builders-use-theme-styles .elementor-widget-heading .elementor-heading-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title a,
+.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-title,
 html #jp-relatedposts h3.jp-relatedposts-headline,
 html #infinite-handle span button,
 html #infinite-handle span button:hover,
@@ -5333,6 +5334,7 @@ ul.product_list_widget li .product-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-heading .elementor-heading-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title a,
+.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-title,
 html #jp-relatedposts h3.jp-relatedposts-headline em,
 .widget-area .widget h2,
 .site-footer-widgets ul li h2.widgettitle {
@@ -5346,6 +5348,7 @@ ul.product_list_widget li .product-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-heading .elementor-heading-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title a,
+.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-title,
 .widget-area .widget h2,
 .site-footer-widgets ul li h2.widgettitle,
 .header-image .overlay .opacity h1,
@@ -5363,6 +5366,7 @@ ul.product_list_widget li .product-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-heading .elementor-heading-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title a,
+.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-title,
 html #jp-relatedposts h3.jp-relatedposts-headline,
 .widget-area .widget h2,
 .site-footer-widgets .widgettitle {
@@ -5387,7 +5391,8 @@ textarea,
 .woocommerce .woocommerce-ordering select,
 .woocommerce-page .woocommerce-ordering select,
 .citylogic-page-builders-use-theme-styles .elementor-widget-text-editor,
-.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description {
+.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
+.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-description {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -5399,7 +5404,8 @@ body,
 #cancel-comment-reply-link,
 .site-footer-widgets .widget a,
 .citylogic-page-builders-use-theme-styles .elementor-widget-text-editor,
-.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description {
+.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
+.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-description {
 	font-weight: 400;
 }
 
@@ -5431,6 +5437,7 @@ body,
 .woocommerce-checkout #payment div.payment_box,
 .citylogic-page-builders-use-theme-styles .elementor-widget-text-editor,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
+.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-description,
 .wp-block-quote cite {
 	color: #5A5A5A;
 }
@@ -5504,7 +5511,8 @@ textarea,
 #add_payment_method #payment div.payment_box,
 .woocommerce-checkout #payment div.payment_box,
 .citylogic-page-builders-use-theme-styles .elementor-widget-text-editor,
-.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description {
+.citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
+.citylogic-page-builders-use-theme-styles .elementor-widget-image-box .elementor-image-box-description {
 	letter-spacing: 0;
 }
 
