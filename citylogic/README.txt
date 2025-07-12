@@ -108,6 +108,9 @@ View the theme settings under "Appearance" -> Customize.
 
 == Changelog ==
 
+#### 1.1.49
+* New: Updated the latest Font Awesome version to 6.7.2
+
 #### 1.1.48
 * New: Added default styling for the Elementor Image Box widget
 

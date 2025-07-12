@@ -4,7 +4,7 @@
  *
  * @package CityLogic
  */
-define( 'CITYLOGIC_THEME_VERSION' , '1.1.48' );
+define( 'CITYLOGIC_THEME_VERSION' , '1.1.49' );
 
 global $solidify_breakpoint, $mobile_menu_breakpoint, $demo_slides;
 
@@ -311,7 +311,7 @@ function citylogic_theme_scripts() {
 	} else if ( get_theme_mod( 'citylogic-font-awesome-version', customizer_library_get_default( 'citylogic-font-awesome-version' ) ) == '5.5.0' ) {
 		wp_enqueue_style( 'otb-font-awesome', '//use.fontawesome.com/releases/v5.5.0/css/all.css', array(), '5.5.0' );
 	} else {
-		wp_enqueue_style( 'otb-font-awesome', '//use.fontawesome.com/releases/v6.5.1/css/all.css', array(), '6.5.1' );
+		wp_enqueue_style( 'otb-font-awesome', '//use.fontawesome.com/releases/v6.7.2/css/all.css', array(), '6.7.2' );
 	}
 	
 	wp_enqueue_style( 'citylogic-style', get_stylesheet_uri(), array(), CITYLOGIC_THEME_VERSION );
