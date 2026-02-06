@@ -27,13 +27,12 @@ $height   	  	   = get_custom_header()->height;
 $alt_text 	  	   = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
 $header_image_text = pll__( get_theme_mod( 'citylogic-header-image-text', customizer_library_get_default( 'citylogic-header-image-text' ) ) );
 $overlay_text 	   = !empty($header_image_text) ? trim( $header_image_text ) : '';
-
 ?>
 
 <div class="header-image-padder">
 	<div class="header-image loading">
 	
-		<img src="<?php echo esc_url( $src ); ?>" alt="<?php echo esc_attr( $alt_text ); ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+		<img src="<?php echo esc_url( $src ); ?>" alt="<?php echo esc_attr( $alt_text ); ?>" width="<?php echo esc_attr( $width ); ?>" height="<?php echo esc_attr( $height ); ?>" loading="eager" decoding="async" fetchpriority="high" />
 		<div class="opacity"></div>
 		
 		<?php

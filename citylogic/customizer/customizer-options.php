@@ -1057,6 +1057,24 @@ function citylogic_customizer_library_options() {
         'type'    => 'textarea',
         'default' => __( 'The page you were looking for cannot be found!', 'citylogic' )
     );
+
+    // Privacy & Legal Settings
+    $section = 'citylogic-privacy-and-legal';
+    
+    $sections[] = array(
+    	'id' => $section,
+    	'title' => __( 'Privacy & Legal', 'citylogic' ),
+    	'priority' => '50'
+    );
+
+	$options['citylogic-show-recaptcha-badge'] = array(
+    	'id' => 'citylogic-show-recaptcha-badge',
+    	'label'   => __( 'Show reCAPTCHA badge', 'citylogic' ),
+    	'section' => $section,
+    	'type'    => 'checkbox',
+    	'default' => 1,
+		'description' => __( '<p>Uncheck this only if you have added the required Google attribution text near your contact forms</p>', 'citylogic' )
+	);
     
     // Gutenberg Settings
     $section = 'citylogic-gutenberg';

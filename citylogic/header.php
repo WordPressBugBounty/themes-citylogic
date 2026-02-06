@@ -104,4 +104,4 @@ get_template_part( 'library/template-parts/social-links' );
 
 <div class="content-container <?php echo $show_slider || $show_header_image ? 'extra-padded' : ''; ?>">
 	<div id="content" class="site-content site-container <?php echo ( $no_sidebar ) ? 'no-sidebar' : ''; ?>">
-		<a name="site-content"></a>
+		<a id="site-content" name="site-content" tabindex="-1"></a>
