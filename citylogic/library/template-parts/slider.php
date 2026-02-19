@@ -146,7 +146,7 @@ elseif ( $slider_type == 'default' ) :
 					<li class="slide">
 						<img
 							src="<?php echo esc_url( $slide['image'] ); ?>"
-							alt="<?php echo esc_attr__( 'Demo Slide', 'namaha' ); ?>"
+							alt="<?php echo esc_attr__( 'Demo Slide', 'citylogic' ); ?>"
 							decoding="async"
 							loading="<?php echo $is_first ? 'eager' : 'lazy'; ?>"
 							fetchpriority="<?php echo $is_first ? 'high' : 'low'; ?>"

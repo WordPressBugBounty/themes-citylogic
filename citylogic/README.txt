@@ -108,6 +108,10 @@ View the theme settings under "Appearance" -> Customize.
 
 == Changelog ==
 
+#### 1.1.56
+* Tweak: Mobile menu toggle accessibility - added ARIA labelling
+* Tweak: Set the latest version of Font Awesome to be used by default
+
 #### 1.1.55
 * Tweak: Improved slider image loading to reduce layout shift and improve page load performance
 

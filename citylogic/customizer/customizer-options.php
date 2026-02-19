@@ -984,7 +984,7 @@ function citylogic_customizer_library_options() {
     	'section' => $section,
     	'type'    => 'select',
     	'choices' => $choices,
-    	'default' => '4.7.0',
+    	'default' => 'latest',
     	'description' => __( 'Select the version of Font Awesome that you would like to use. <strong>Icon variation will occur between the versions.</strong>', 'citylogic' )
     );
     
