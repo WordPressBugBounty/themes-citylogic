@@ -4,7 +4,7 @@
  *
  * @package CityLogic
  */
-define( 'CITYLOGIC_THEME_VERSION' , '1.1.56' );
+define( 'CITYLOGIC_THEME_VERSION' , '1.1.57' );
 
 global $solidify_breakpoint, $mobile_menu_breakpoint, $demo_slides;
 
@@ -877,6 +877,10 @@ if ( ! function_exists( 'citylogic_out_of_stock_notice' ) ) {
 	}
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'citylogic_out_of_stock_notice', 10 );
+
+if ( class_exists( 'WPO_WCPDF' ) && file_exists( get_template_directory() . '/library/includes/woocommerce-pdf-invoices.php' ) ) {
+	require get_template_directory() . '/library/includes/woocommerce-pdf-invoices.php';
+}
 
 // Set the blog excerpt length
 if ( ! function_exists( 'citylogic_excerpt_length' ) ) {

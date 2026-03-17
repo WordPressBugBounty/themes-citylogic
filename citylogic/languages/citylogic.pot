@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: CityLogic 1.1.56\n"
+"Project-Id-Version: CityLogic 1.1.57\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/citylogic\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-19T10:56:22+02:00\n"
+"POT-Creation-Date: 2026-03-17T15:54:33+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: citylogic\n"
@@ -279,7 +279,7 @@ msgid "CityLogic adds custom styling to support external plugins:"
 msgstr ""
 
 #: customizer/customizer-options.php:350
-#: functions.php:1102
+#: functions.php:1106
 msgid "BookingPress"
 msgstr ""
 
@@ -482,7 +482,7 @@ msgid "Header image has a minimum width"
 msgstr ""
 
 #: customizer/customizer-options.php:764
-#: functions.php:1107
+#: functions.php:1111
 msgid "WooCommerce"
 msgstr ""
 
@@ -720,36 +720,36 @@ msgstr ""
 msgid "Out of Stock"
 msgstr ""
 
-#: functions.php:1057
+#: functions.php:1061
 msgid "Elementor"
 msgstr ""
 
-#: functions.php:1062
+#: functions.php:1066
 msgid "You can quote me on that"
 msgstr ""
 
-#: functions.php:1067
+#: functions.php:1071
 msgid "SiteOrigin Widgets Bundle"
 msgstr ""
 
-#: functions.php:1072
+#: functions.php:1076
 msgid "Beam me up Scotty"
 msgstr ""
 
-#: functions.php:1077
-#: functions.php:1092
+#: functions.php:1081
+#: functions.php:1096
 msgid "Recent Posts Widget Extended"
 msgstr ""
 
-#: functions.php:1082
+#: functions.php:1086
 msgid "WPForms"
 msgstr ""
 
-#: functions.php:1087
+#: functions.php:1091
 msgid "Photo Gallery by Supsystic"
 msgstr ""
 
-#: functions.php:1097
+#: functions.php:1101
 msgid "MailChimp for WordPress"
 msgstr ""
 
