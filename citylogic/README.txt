@@ -108,6 +108,9 @@ View the theme settings under "Appearance" -> Customize.
 
 == Changelog ==
 
+#### 1.1.58
+* New: Added SKU display support for WooCommerce PDF Invoices & Packing Slips
+
 #### 1.1.57
 * New: Added base styling support for WooCommerce PDF Invoices & Packing Slips plugin
 * New: Improved invoice readability and table layout
